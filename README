@@ -1,0 +1,14 @@
+
+Простая программа на ruby для быстрой генерации из командной строки.
+Легка в использовании. В качестве параметров принимает следующие параметры: текст, ширина, высота для генерируемого изображения в формате PNG, параметры по умолчанию:
+text = ARGV[0] ? ARGV[0] : "Hello from ruby"
+﻿width = ARGV[1] ? ARGV[1] : "150"
+height = ARGV[2] ? ARGV[2] : "150"
+
+Для установки в систему 
+sudo cp qr-google.rb /usr/bin/qr-google.rb
+sudo chmod +x /usr/bin/qr-google.rb
+
+Пример использования
+qr-google.rb 'Hi from CLI' > test.png
+qr-google.rb 'Hi from CLI' 500 500 > test.png 
